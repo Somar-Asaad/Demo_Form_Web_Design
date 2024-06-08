@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Forume</title>
+  </head>
+  <body>
+    <main>
+      <header><h1>Demo Form</h1></header>
+      <form action="/" method="Get">
+        <h2>your personal details</h2>
+        <section id="personal-details">
+          <label for="user-name">Your name</label>
+          <input type="text" name="username" id="user-name" />
+          <label for="user-email">Your email address</label>
+          <input type="email" name="useremail" id="user-email" />
+          <label for="user-password">Your password</label>
+          <input
+            type="password"
+            name="userpassword"
+            id="user-password"
+            step="1"
+          />
+        </section>
+
+        <section id="more-details">
+          <h2>more details</h2>
+          <label for="user-age">Your age</label>
+          <input type="number" name="userage" id="user-age" />
+          <label for="user-birthdate">Your birthdate</label>
+          <input type="date" name="userbirthdate" id="user-birthdate" required min="1921-01-01" max="2003-01-01"/>
+          <label for="color">Your favorite color</label>
+          <select name="fav-color" id="color">
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+          </select>
+
+          <label for="message">Your message</label>
+          <textarea name="user-message" id="message" rows="2"></textarea>
+        </section>
+        <section id="verfication">
+          <h2>How should we verify your account?</h2>
+          <div class="verify-account-method">
+            <input type="radio" value="SMS" name="verify" id="sms-method" />
+            <label for="sms-method">Via text message (SMS)</label>
+          </div>
+          <div class="verify-account-method">
+            <input type="radio" value="phone" name="verify" id="phone-method" />
+            <label for="phone-method">Via a phone call</label>
+          </div>
+          <div class="verify-account-method">
+            <input type="radio" value="email" name="verify" id="email-method" />
+            <label for="email-method">Via an email</label>
+          </div>
+        </section>
+        <section id="contact">
+          <h2>How should we contact you?</h2>
+          <div class="check-box">
+            <input
+              type="checkbox"
+              value="email"
+              id="email-checkbox"
+              name="contatct"
+            />
+            <label for="email-checkbox">Contact me via email</label>
+          </div>
+          <div class="check-box">
+            <input
+              type="checkbox"
+              value="phone"
+              id="phone-checkbox"
+              name="contatct"
+            />
+            <label for="phone-checkbox">Contact me via phone</label>
+          </div>
+          <div class="check-box">
+            <input
+              type="checkbox"
+              value="agreed"
+              id="agreement"
+              name="agreed"
+            />
+            <label for="agreement">Agree to terms?</label>
+          </div>
+        </section>
+
+        <button>Submit</button>
+      
+      </form>
+    </main>
+  </body>
+</html>

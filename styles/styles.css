@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(50, 50, 50);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  border-radius: 8px;
+  width: 60%;
+  margin: 2rem auto auto auto;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+
+}
+
+input,textarea,select {
+  display: block;
+  margin: 0.5rem auto 1rem auto;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #565252;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  border: 2px solid rgb(192, 183, 183);
+  
+}
+
+input:focus,textarea:focus {
+  border: 2px solid rgb(192, 183, 183);
+  background-color: rgb(197, 150, 241);
+  color: rgb(32, 5, 63);
+
+}
+
+button {
+  background-color: rgb(17, 2, 47);
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(52, 14, 95);
+  border-color: rgb(52, 15, 95);
+}
+
+main h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.verify-account-method,.check-box {
+  display: flex;
+  align-items: center;
+}
+
+.verify-account-method input,.check-box input {
+  width: auto;
+  margin: 0 0.5rem;
+}
